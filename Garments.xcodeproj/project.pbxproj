@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BCEF55C32A0D63C7001CCF98 /* GarmentsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55C22A0D63C7001CCF98 /* GarmentsApp.swift */; };
-		BCEF55C52A0D63C7001CCF98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55C42A0D63C7001CCF98 /* ContentView.swift */; };
+		BCEF55C52A0D63C7001CCF98 /* GarmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55C42A0D63C7001CCF98 /* GarmentListView.swift */; };
 		BCEF55C72A0D63C8001CCF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEF55C62A0D63C8001CCF98 /* Assets.xcassets */; };
 		BCEF55CA2A0D63C8001CCF98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEF55C92A0D63C8001CCF98 /* Preview Assets.xcassets */; };
 		BCEF55CC2A0D63C8001CCF98 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55CB2A0D63C8001CCF98 /* Persistence.swift */; };
@@ -16,6 +16,8 @@
 		BCEF55D92A0D63C8001CCF98 /* GarmentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55D82A0D63C8001CCF98 /* GarmentsTests.swift */; };
 		BCEF55E32A0D63C8001CCF98 /* GarmentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55E22A0D63C8001CCF98 /* GarmentsUITests.swift */; };
 		BCEF55E52A0D63C8001CCF98 /* GarmentsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55E42A0D63C8001CCF98 /* GarmentsUITestsLaunchTests.swift */; };
+		BCEF55F22A0D6C59001CCF98 /* NewGarmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55F12A0D6C59001CCF98 /* NewGarmentView.swift */; };
+		BCEF55F42A0D7C1B001CCF98 /* GarmentStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF55F32A0D7C1B001CCF98 /* GarmentStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 /* Begin PBXFileReference section */
 		BCEF55BF2A0D63C7001CCF98 /* Garments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Garments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEF55C22A0D63C7001CCF98 /* GarmentsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsApp.swift; sourceTree = "<group>"; };
-		BCEF55C42A0D63C7001CCF98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BCEF55C42A0D63C7001CCF98 /* GarmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentListView.swift; sourceTree = "<group>"; };
 		BCEF55C62A0D63C8001CCF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEF55C92A0D63C8001CCF98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCEF55CB2A0D63C8001CCF98 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +50,8 @@
 		BCEF55DE2A0D63C8001CCF98 /* GarmentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GarmentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCEF55E22A0D63C8001CCF98 /* GarmentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsUITests.swift; sourceTree = "<group>"; };
 		BCEF55E42A0D63C8001CCF98 /* GarmentsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCEF55F12A0D6C59001CCF98 /* NewGarmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGarmentView.swift; sourceTree = "<group>"; };
+		BCEF55F32A0D7C1B001CCF98 /* GarmentStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarmentStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		BCEF55B62A0D63C7001CCF98 = {
 			isa = PBXGroup;
 			children = (
+				BCEF55F32A0D7C1B001CCF98 /* GarmentStore.swift */,
 				BCEF55C12A0D63C7001CCF98 /* Garments */,
 				BCEF55D72A0D63C8001CCF98 /* GarmentsTests */,
 				BCEF55E12A0D63C8001CCF98 /* GarmentsUITests */,
@@ -99,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				BCEF55C22A0D63C7001CCF98 /* GarmentsApp.swift */,
-				BCEF55C42A0D63C7001CCF98 /* ContentView.swift */,
+				BCEF55C42A0D63C7001CCF98 /* GarmentListView.swift */,
+				BCEF55F12A0D6C59001CCF98 /* NewGarmentView.swift */,
 				BCEF55C62A0D63C8001CCF98 /* Assets.xcassets */,
 				BCEF55CB2A0D63C8001CCF98 /* Persistence.swift */,
 				BCEF55CD2A0D63C8001CCF98 /* Garments.xcdatamodeld */,
@@ -264,8 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEF55CC2A0D63C8001CCF98 /* Persistence.swift in Sources */,
-				BCEF55C52A0D63C7001CCF98 /* ContentView.swift in Sources */,
+				BCEF55C52A0D63C7001CCF98 /* GarmentListView.swift in Sources */,
 				BCEF55CF2A0D63C8001CCF98 /* Garments.xcdatamodeld in Sources */,
+				BCEF55F22A0D6C59001CCF98 /* NewGarmentView.swift in Sources */,
+				BCEF55F42A0D7C1B001CCF98 /* GarmentStore.swift in Sources */,
 				BCEF55C32A0D63C7001CCF98 /* GarmentsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

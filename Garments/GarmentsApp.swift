@@ -13,8 +13,9 @@ struct GarmentsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GarmentListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
+
